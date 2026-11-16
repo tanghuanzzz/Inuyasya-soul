@@ -1,0 +1,180 @@
+
+
+
+青泽村次美tsugumi 支线 野外森林-A12区域 去松山村之前先去青泽村
+幸魂如果大于60
+犬夜叉会说“你爹你娘知道你现在平平安安的，一定会很高兴的”
+否则犬夜叉会说“怕辛苦就不要当半妖了哦。”
+
+当游戏进度到达240以上再次见次美会有新的对话
+
+
+水鸟村
+民房2 帮老人买药材   奈落暗门钥匙
+  犬夜叉和魂覆盖第3个格子，幸魂要大于54 
+
+小孩任务  RP值+21 支线评分+3  随机获得金木水火土 象晶硅
+在水鸟村跟村民对完话之后出去村子立刻回去找小孩对话会启动小孩任务
+提前将犬夜叉跟钢牙的奇魂设置为50 40
+打完蛇妖自动触发任务
+如果犬夜叉的 奇魂大于50 犬夜叉会说有点不放心，还是回去看看吧
+如果钢牙的 奇魂大于40 钢牙会说 那我们跟过去看看？他一个人跑来这里是有点奇怪  
+如果他们的奇魂在打完蛇妖之前低于50 40 ，就不会继续小孩的支线了！
+
+右上角行脚僧
+飞头蛮、黑冢、姑获鸟、酒吞童
+
+
+东云城
+犬夜叉 幸魂57 钢牙幸魂55
+
+
+
+走出炎之洞窟后回到御神木村跟小孩对话
+
+青泽村支线 
+找次美对话
+将五行晶矿跟金块给村民
+
+
+
+
+
+
+
+
+
+
+
+
+50年前
+
+御神木村任务：
+
+雪山除妖后跟小孩对话
+贵族公馆除妖后进度是400，回到村子四魂之玉被夺走
+
+打完蜘蛛游戏进度是410
+
+游戏进度420去民房1跟老人对话
+
+进度422 小孩说“剛才看到桔梗姐姐往村子東邊去了”
+
+鬼蜘蛛洞前存档 ！！！！！！！！！根据四魂值有不同的对话，见完鬼蜘蛛进度430
+
+2：民房3 帮老人买药材  （必须在贵族公馆除妖前完成）
+
+
+3：犬夜叉跟桔梗在废弃神社休息后的第二天，去跟小孩对话，刀刀斋出现。去杂货铺可以炼制一把火属性或类属性的弓。
+
+游戏进度460再找小孩 刀刀斋出现
+
+
+
+
+
+
+
+桧叶村任务：
+从贵族公馆除妖结束后向下走，到桧叶村门口提前存档，桔梗的幸魂+10  奇魂+16
+
+1：帮老婆婆找他的儿子     野外G7的桥上
+
+好结局：野猪肉+10  
+木材+10  
+RP值+=21  
+支线评分+=3
+
+坏结局：
+RP值+=7
+支线评分+=1
+                
+
+2：狸猫假扮法师  桧叶村民房1   桔梗的奇魂要在6个格子多一点
+
+3：制作宝珠 桧叶村民房2
+      需要的东西：珍珠、水象晶矿、火象晶矿
+      绀碧之珠 、蓬莱宝珠、珍珠饰物   游戏时间>=800
+
+
+
+
+
+
+青泽村任务：
+午来的任务游戏时间不能大于399
+
+1：炼制阴阳镜 犬夜叉的奇魂要大于66
+
+2：午来
+
+
+
+贵族公馆
+
+贵族公馆任务开始之前，桔梗的好感度必须大于50
+桔梗必须选择抓蝴蝶
+
+除妖后，在后花园与桔梗见面之前存档！！！，此时的游戏时间是394
+
+犬夜叉的奇魂要大于56 
+桔梗的好感度大于50 
+犬夜叉的荒魂比例高会选择变成妖怪，和魂比例高会想变成人类
+犬夜叉会说“等等,我有點擔心午來他們,我們先去青
+澤村看看吧...”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+钢牙幸魂大于52 奇魂大于45
+荒魂X10÷幸魂  得出的结果>=20
+
+  attr_accessor  :sikon_A #荒
+  attr_accessor  :sikon_B #奇
+  attr_accessor  :sikon_C #幸
+  attr_accessor  :sikon_D #和
+
+($game_actors[3].sikon_B奇魂 > 45 and $game_variables[9]好感>89) and ($game_actors[3].sikon_A荒魂*10/$game_actors[3].sikon_C幸)>=20
+
+
+
+temp_cal1 = ($game_actors[1].sikon_A*100/($game_actors[1].sikon_A + $game_actors[1].sikon_B + $game_actors[1].sikon_C + 
+$game_actors[1].sikon_D))
+temp_cal2 = ($game_actors[1].sikon_D>104 and ($game_actors[1].sikon_B>69 or $game_switches[245]==true))
+temp_cal3 = ($game_actors[2].sikon_A*100/($game_actors[2].sikon_A + $game_actors[2].sikon_B + $game_actors[2].sikon_C + 
+$game_actors[2].sikon_D))
+$game_switches[1]=((temp_cal1>30 and temp_cal2) and ($game_variables[8]>119 and temp_cal3>20))
+
+
+$game_variables[20] = $game_actors[1].sikon_A*100/($game_actors[1].sikon_A + $game_actors[1].sikon_B + 
+$game_actors[1].sikon_C + $game_actors[1].sikon_D)
+$game_variables[21] = $game_actors[2].sikon_A*100/($game_actors[2].sikon_A + $game_actors[2].sikon_B + 
+$game_actors[2].sikon_C + $game_actors[2].sikon_D)
+
+
+
+$game_variables[20] = $game_actors[1].sikon_B*100/($game_actors[1].sikon_A + $game_actors[1].sikon_B + 
+$game_actors[1].sikon_C + $game_actors[1].sikon_D)
+$game_variables[21] = $game_actors[2].sikon_B奇魂*100/($game_actors[2].sikon_A荒魂 + $game_actors[2].sikon_B奇魂 + 
+$game_actors[2].sikon_C幸魂 + $game_actors[2].sikon_D和魂)
+
+$game_variables[20]>50 or $game_variables[21]>50
+
+
+奇魂*100/(荒魂 +奇魂 + 幸魂 +和魂)
+
+ 13w   
+奇魂130 荒105  幸110 和125
